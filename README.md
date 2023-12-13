@@ -26,21 +26,43 @@ This repository contains the source code for a web application built with Flask 
     cd object-detection-removal
     ```
 
-2. Install dependencies:
+2. **Download YOLO Model Files:**
+   - Download the YOLO model files (`yolov3.weights`, `yolov3.cfg`, `coco.names`) and place them in the project directory.
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+3. **Create Virtual Environment (Optional):**
+   - If you prefer, create a virtual environment using:
 
-3. Download the YOLO model files (`yolov3.weights`, `yolov3.cfg`, `coco.names`) and place them in the project directory.
+      ```bash
+      python -m venv myenv
+      ```
 
-4. Run the Flask application:
+   - Activate the virtual environment:
+
+      - On Windows:
+
+        ```bash
+        myenv\Scripts\activate
+        ```
+
+      - On macOS/Linux:
+
+        ```bash
+        source myenv/bin/activate
+        ```
+
+   - Install the required Python packages:
+
+      ```bash
+      pip install -r requirements.txt
+      ```
+
+4. **Run the Flask application:**
 
     ```bash
     python app.py
     ```
 
-5. In a separate terminal, run the Streamlit app:
+5. **Run the Streamlit app:**
 
     ```bash
     streamlit run streamlit_app.py
@@ -57,14 +79,6 @@ This repository contains the source code for a web application built with Flask 
 4. Optionally, enter the numbers of objects you want to remove and click the "Remove Selected Objects" button.
 
 5. The application will display a success message if objects are removed. Choose to upload another image or continue with the current image.
-
-## Documentation
-
-For more details about the application, including challenges faced during development and code explanations, refer to the [documentation](documentation.md).
-
-## Deployment
-
-The application can be deployed to platforms such as [Streamlit Sharing](https://www.streamlit.io/sharing) or [Heroku](https://www.heroku.com/). Follow the platform-specific instructions for deployment.
 
 ## License
 
