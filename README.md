@@ -27,7 +27,7 @@ This repository contains the source code for a web application built with Flask 
     ```
 
 2. **Download YOLO Model Files:**
-   - Download the YOLO model files (`yolov3.weights`, `yolov3.cfg`, `coco.names`) and place them in the project directory.
+   - Download the YOLO model files ([`yolov3.weights`](https://pjreddie.com/media/files/yolov3.weights), [`yolov3.cfg`](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg), [`coco.names`](https://github.com/pjreddie/darknet/blob/master/data/coco.names)) and place them in the project directory.
 
 3. **Create Virtual Environment (Optional):**
    - If you prefer, create a virtual environment using:
